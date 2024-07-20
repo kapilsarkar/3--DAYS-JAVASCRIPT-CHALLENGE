@@ -129,3 +129,36 @@ console.log("Result of remainder is:",remainder)
 //2.Comparison and Logical Operators Script: Create a script that compares two numbers using different comparison operators and combines conditions using logical operators, logging the results.
 
 
+let valNum1 = 20
+let valNum2 = 30
+
+//Comparison Operators.
+
+let greaterThan = valNum1 > valNum2
+let lessThan = valNum1 < valNum2
+let greaterThanEqualTo = valNum1 >= valNum2
+let lessThanEqualTo = valNum1 <= valNum2
+let equalTo = valNum1 == valNum2
+let strictEqualTo = valNum1 === valNum2
+
+console.log("Result of Greater than is :", greaterThan)
+console.log("Rersult of Less than is:", lessThan)
+console.log("REsult of Greater Than Equal To :",greaterThanEqualTo)
+console.log("Result of Less than Equal To : ",lessThanEqualTo)
+console.log("Result of Eual to",equalTo)
+console.log("Result of Strict Equal To ", strictEqualTo)
+
+//Logical Operators :
+
+let logCondition1 = valNum1 > valNum2 && valNum1 < valNum2
+let logCondition2 = valNum1 > valNum2 || valNum1 < valNum2
+console.log("Result of Logical Operator && is :", logCondition1)
+console.log("Result of Logical Operator || is :",logCondition2)
+
+//3. Ternary Operator Script : Write a script that uses the ternary operator to determine if a number is positive or negative and logs the result.
+
+let terVal1 = 50
+let terVal2 = 60
+
+let terValResult = terVal1>=0? "Positive" : "Negative"
+console.log("Result of Ternary Operator is:",terValResult)
