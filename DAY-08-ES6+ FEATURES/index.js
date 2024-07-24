@@ -36,12 +36,64 @@ console.log(BookTitle, BookAuthor);
 
 //Task-5 : Use the spread operator to create a new array that includes all elements of an existing array plus additional elements, and log the new array to the console.
 
-const num1 = [1,2,3,4,5]
-const num2 = [6,7,8,9,10]
+const num1 = [1, 2, 3, 4, 5];
+const num2 = [6, 7, 8, 9, 10];
 
-const joinedArray = [...num1,...num2]
-console.log(joinedArray)
+const joinedArray = [...num1, ...num2];
+console.log(joinedArray);
 
 //Task-6 : Use the rest operator in a function to accept an arbitrary number of arguments, sum them, and return the result.
+
+function add(...num) {
+  console.log(num);
+  let sum = 0;
+  for (let i = 0; i < num.length; i++) {
+    sum += num[i];
+  }
+  return sum;
+}
+
+const result = add(1, 5, 10, 20, 30);
+console.log(result);
+
+//Activity-4 : Default Parameter
+
+//Task-7 : Write a function that takes two parameters and returns their product, with the second parameter having a default value of 1. Log the result of calling this function with and without the second parameter.
+
+function product(a, b = 1) {
+  return a * b;
+}
+
+console.log(product(10));
+console.log(product(20, 3));
+
+//Activity-5 : Enhanced Object Literals
+
+//Task-8 : Use enhanced object literals to create an object with methods and properties, and log the object to the console.
+
+const myName = "Brock Lesnar";
+const myAddress = "USA FLORIDA";
+
+const wweChampion = {
+  myName,
+  myAddress,
+  msg() {
+    console.log(
+      `Hi my name is : ${this.myName} and my address is ${this.myAddress}`
+    );
+  },
+};
+
+console.log(wweChampion);
+wweChampion.msg();
+
+//Task-9 : Create an object with computed property names based on variables and log the object to the console.
+
+const comPropName = "Name"
+const nameObj = {
+  [comPropName] : "Hello my Name is Paul Heyman"
+}
+
+console.log(nameObj)
 
 
